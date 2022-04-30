@@ -7,33 +7,33 @@
 }
 
 /* Write CSS code below */
-body {
-    background-color: white;
-}
 
-main{
+.main-content{
     display: grid;
-    grid-template-rows: 1fr;
+    /* grid-template-rows: 1fr; */
     grid-template-columns: 300px 700px;
     min-height: 1000px;
-    background-color: rgb(243, 243, 243);
-    row-gap: 10px;
-    column-gap: 10px;
+    max-height: 100vh;
+    /* background-color: rgb(243, 243, 243); */
+    /* row-gap: 10px;
+    column-gap: 10px; */
 }
 
-main section {
+/* main section {
     background-color: rgb(243, 243, 243);
 
-}
+} */
 
 .left-section {
     background-color: rgb(29,29,37);
+    color: rgb(243, 243, 243);
+    grid-column: 1 span;
 
 }
 
 .left-content { 
     padding: 1rem;
-    color: rgb(243, 243, 243);
+    
 }
 
 img.profile-image { 
@@ -41,7 +41,7 @@ img.profile-image {
     margin: auto;
     border: 5px solid white;
     border-radius: 30%;
-    width: 60%;
+    width: 30%;
 
 }
 
@@ -52,6 +52,7 @@ img.profile-image {
     text-align: center;
     letter-spacing: 0.02px;
     text-transform: uppercase;
+    word-spacing:0.02px;
 }
 
 .profile-details h4 {
@@ -75,6 +76,8 @@ img.profile-image {
 .icon i {
     color: rgb(97, 97, 197);
     font-size: 1.15rem;
+    align-content: center;
+    /* text-align: center; */
 }
 
 .social-media .icon i:hover {
@@ -83,6 +86,11 @@ img.profile-image {
 
 .personal-details {
     line-height: 5vh;
+}
+
+span {
+    width: 10px;
+    text-align: center;
 }
 
 .personal-details .icon i span {
@@ -112,6 +120,8 @@ img.profile-image {
 
 .right-section {
     background-color: rgb(243,243,243);
+    width: 90%;
+    grid-column: span 1 / span 2;
 }
 
 .right-main-content {
@@ -187,18 +197,13 @@ img.profile-image {
 }
 
 @media only screen and (max-width: 673px) {
-    body {
-        background-color: rgb(255, 255, 255);
-    }
 
-    main{
-        display: grid;
+    .main-content {
+        /* display: grid; */
         grid-template-columns: repeat(1, 1fr);;
-        grid-template-rows: 1fr 2fr;
+        /* grid-template-rows: 1fr 2fr; */
         width: 90%;
         min-height: 1000px;
-        background-color: rgb(243, 243, 243);
-        row-gap: 10px;
-        column-gap: 10px;
+        /* background-color: rgb(243, 243, 243); */
     }
 }
