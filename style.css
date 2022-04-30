@@ -7,3 +7,198 @@
 }
 
 /* Write CSS code below */
+body {
+    background-color: white;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 300px 700px;
+    min-height: 1000px;
+    background-color: rgb(243, 243, 243);
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+main section {
+    background-color: rgb(243, 243, 243);
+
+}
+
+.left-section {
+    background-color: rgb(29,29,37);
+
+}
+
+.left-content { 
+    padding: 1rem;
+    color: rgb(243, 243, 243);
+}
+
+img.profile-image { 
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+
+}
+
+.profile-details h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+}
+
+.profile-details h4 {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.profile-details p {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon i {
+    color: rgb(97, 97, 197);
+    font-size: 1.15rem;
+}
+
+.social-media .icon i:hover {
+    color: rgb(129, 129, 129);  
+}
+
+.personal-details {
+    line-height: 5vh;
+}
+
+.personal-details .icon i span {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(243, 243, 243);
+}
+
+.skills-title {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.progress-bar {
+    background-color: white;
+    border: 1px white solid;
+    height: 4px;
+}
+
+.right-section {
+    background-color: rgb(243,243,243);
+}
+
+.right-main-content {
+    color: rgb(29,29,37);
+    padding: 2rem 3rem; 
+}
+
+/* It should have a font size of 1.2rem and font-weight of 700, padding of 0.5 rem and letter-spacing of 1px */
+.right-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.para {
+    padding: 0.5rem;
+}
+
+.education-content {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.education-content-left h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+.education-content-left p {
+    padding: 0.5rem;
+}
+
+.education-content-right h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+.education-content-right p {
+    padding: 0.5rem;
+}
+
+.experience-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apple h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+.apple p {
+    padding: 0.5rem;
+}
+
+.year h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+}
+
+.year p {
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 673px) {
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);;
+        grid-template-rows: 1fr 2fr;
+        width: 90%;
+        min-height: 1000px;
+        background-color: rgb(243, 243, 243);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+}
