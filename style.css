@@ -99,7 +99,7 @@ span {
     color: rgb(243, 243, 243);
 }
 
-.skills-title {
+.skills {
     font-size: 0.75rem;
     text-align: center;
     text-transform: uppercase;
@@ -108,14 +108,32 @@ span {
 
 .skill-name {
     font-size: 0.65rem;
+    font-weight: 0.65rem;
     text-align: left;
+    text-transform: uppercase;
     padding-bottom: 0.5rem;
 }
 
 .progress-bar {
-    background-color: white;
-    border: 1px white solid;
-    height: 4px;
+border: 1px white solid;
+height: 4px;
+background-color: white;
+}
+
+.bar-1 {
+    width: 90%;
+}
+
+.bar-2 {
+    width: 80%;
+}
+
+.bar-3 {
+    width: 70%;
+}
+
+.bar-4 {
+    width: 60%;
 }
 
 .right-section {
